@@ -1,10 +1,16 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+<!--	<view class="content">-->
+<!--		<image class="logo" src="/static/logo.png"></image>-->
+<!--		<view>-->
+<!--			<text class="title">{{title}}</text>-->
+<!--		</view>-->
+<!--	</view>-->
+  <view>
+    <u-cell-group>
+      <u-cell icon="setting-fill" title="个人设置"></u-cell>
+      <u-cell icon="integral-fill" title="会员等级" value="新版本"></u-cell>
+    </u-cell-group>
+  </view>
 </template>
 
 <script>
