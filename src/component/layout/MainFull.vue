@@ -1,5 +1,5 @@
 <template>
-  <view class="tab-bar-root" :style="`height: ${systemInfo.contentHeight - 100}rpx;`">
+  <view class="main-full-root" :style="`height: ${systemInfo.screenHeight};`">
     <slot></slot>
   </view>
 </template>
@@ -8,7 +8,7 @@
 import { systemInfo } from '@/utils/layout'
 
 export default {
-  name: "TabBarMain",
+  name: 'MainFull',
   data() {
     return {
       systemInfo
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.main-full-root {
+  overflow-y: auto;
+}
 </style>

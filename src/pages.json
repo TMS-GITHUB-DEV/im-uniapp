@@ -26,6 +26,12 @@
 			"style": {
 				"navigationBarTitleText": "debug"
 			}
+		},
+		{
+			"path": "pages/index/error",
+			"style": {
+				"navigationBarTitleText": "404"
+			}
 		}
 	],
 	"globalStyle": {
