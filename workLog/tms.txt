@@ -1,0 +1,13 @@
+自定义导航栏 限定导航栏高度为100rpx ok
+限定tabar高度为100rpx ok
+进入程序时获取设备宽高信息并转换成rpx ok
+新建tabbar页面的main组件 ok
+新建带nav页面的main组件 ok
+
+新建不带nav和tabbar的main组件
+新建全屏main组件
+
+
+fixme
+main组件限定高度，并设置自动y轴滚动
+nav组件还有很多功能要补全，具体看组件注释
