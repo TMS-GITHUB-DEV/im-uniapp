@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import './uni.promisify.adaptor'
+import { initSystemInfo } from '@/utils/layout'
 
 import uView from 'uview-ui'
 Vue.use(uView)
@@ -8,6 +9,8 @@ Vue.use(uView)
 Vue.config.productionTip = false
 
 App.mpType = 'app'
+
+initSystemInfo()
 
 uni.$u.setConfig({
   config: {

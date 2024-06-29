@@ -10,6 +10,12 @@
 			}
 		},
 		{
+			"path": "pages/chat/list",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
 			"path": "pages/mine/index",
 			"style": {
 				"navigationBarTitleText": "我的"
@@ -26,17 +32,36 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "im-uniapp",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
 	},
 	"tabBar": {
+//		"color": "#f00",
+//		"selectedColor": "#3cc51f",
+//		"borderStyle": "white",
+//		"backgroundColor": "#000",
+		"height": "100rpx",
+		"fontSize": "20rpx",
+		"spacing": "5rpx",
+		"iconWidth": "48rpx",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
-				"text": "首页"
+				"text": "首页",
+				"iconPath": "static/picture/home.svg",
+				"selectedIconPath": "static/picture/home-selected.svg"
+			},
+			{
+				"pagePath": "pages/chat/list",
+				"text": "消息",
+				"iconPath": "static/picture/chat.svg",
+				"selectedIconPath": "static/picture/chat-selected.svg"
 			},
 			{
 				"pagePath": "pages/mine/index",
-				"text": "我的"
+				"text": "我的",
+				"iconPath": "static/picture/mine.svg",
+				"selectedIconPath": "static/picture/mine-selected.svg"
 			}
 		]
 	}
