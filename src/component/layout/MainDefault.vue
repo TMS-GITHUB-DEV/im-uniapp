@@ -1,5 +1,5 @@
 <template>
-  <view class="main-default-root" :style="`height: ${systemInfo.contentHeight - 100}rpx;`">
+  <view class="main-default-root" :style="`height: ${systemInfo.contentHeight}rpx;`">
     <slot></slot>
   </view>
 </template>

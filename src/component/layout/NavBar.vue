@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.nav-root {
+.nav-bar-root {
   --height-nav: 100rpx;
   --width-back: 120rpx;
 }
@@ -76,7 +76,6 @@ export default {
   height: var(--height-nav);
   display: flex;
   overflow: hidden;
-  //align-items: center;
 }
 
 .back, .more {

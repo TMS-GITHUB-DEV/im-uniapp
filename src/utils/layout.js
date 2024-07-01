@@ -2,12 +2,18 @@ const pxToRpx = px => {
     return px * systemInfo.baseScale
 }
 
+const rpxToPx = rpx => {
+    return rpx / systemInfo.baseScale
+}
+
 const systemInfo = {
     statusBarHeight: 0,
     screenWidth: 0,
     screenHeight: 0,
     baseScale: 0,
-    contentHeight: 0
+    contentHeight: 0,
+    navHeight: 100,
+    tabHeight: 100
 }
 
 const initSystemInfo = () => {
@@ -23,4 +29,5 @@ export {
     systemInfo,
     initSystemInfo,
     pxToRpx,
+    rpxToPx
 }

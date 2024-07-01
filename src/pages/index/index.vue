@@ -12,7 +12,7 @@
 			}
 		},
 		onLoad() {
-
+      console.log(process.env)
 		},
 		methods: {
       gotoDebug() {

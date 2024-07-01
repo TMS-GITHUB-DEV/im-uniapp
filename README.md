@@ -16,10 +16,14 @@
 
 [uview-ui](https://www.uviewui.com/components/npmSetting.html)
 
-
+## 创建本地配置文件
+`.local`后缀的用于本地调试，不会上传到git上且优先级较高
+```shell
+cp .env .env.local
+```
 
 ## 安装依赖
-```
+```shell
 yarn install
 ```
 
@@ -27,12 +31,12 @@ yarn install
 
 这个命令是启动h5端的
 
-```
+```shell
 yarn serve
 ```
 
 ### 项目打包
-```
+```shell
 yarn build
 ```
 

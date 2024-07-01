@@ -13,7 +13,7 @@
         <slot name="nav-title"></slot>
       </template>
     </nav-bar>
-    <view class="main" :style="`height: ${systemInfo.contentHeight - 100}rpx;`">
+    <view class="main" :style="`height: ${systemInfo.contentHeight - systemInfo.navHeight}rpx;`">
       <slot></slot>
     </view>
   </view>

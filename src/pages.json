@@ -10,6 +10,12 @@
 			}
 		},
 		{
+			"path": "pages/friend/index",
+			"style": {
+				"navigationBarTitleText": "好友"
+			}
+		},
+		{
 			"path": "pages/chat/list",
 			"style": {
 				"navigationBarTitleText": "消息"
@@ -56,6 +62,12 @@
 				"text": "首页",
 				"iconPath": "static/picture/home.svg",
 				"selectedIconPath": "static/picture/home-selected.svg"
+			},
+			{
+				"pagePath": "pages/friend/index",
+				"text": "好友",
+				"iconPath": "static/picture/friend.svg",
+				"selectedIconPath": "static/picture/friend-selected.svg"
 			},
 			{
 				"pagePath": "pages/chat/list",

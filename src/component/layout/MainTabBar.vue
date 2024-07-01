@@ -1,5 +1,5 @@
 <template>
-  <view class="main-tab-bar-root" :style="`height: ${systemInfo.contentHeight - 100}rpx;`">
+  <view class="main-tab-bar-root" :style="`height: ${systemInfo.contentHeight - systemInfo.tabHeight}rpx;`">
     <slot></slot>
   </view>
 </template>
@@ -8,7 +8,7 @@
 import { systemInfo } from '@/utils/layout'
 
 export default {
-  name: "MainTabBar",
+  name: 'MainTabBar',
   data() {
     return {
       systemInfo
