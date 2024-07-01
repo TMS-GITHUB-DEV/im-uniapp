@@ -93,28 +93,10 @@
 
 <script>
 import MainTabBar from '@/component/layout/MainTabBar.vue'
-import {testGet, testPost} from "@/api/test";
 
 export default {
   name: 'mine',
   components: { MainTabBar },
-  onLoad(query) {
-    // testGet().then(res => {
-    //   console.log(res)
-    // })
-    // testPost().then(res => {
-    //   console.log(res)
-    // }).catch(err => {
-    //   console.log(err)
-    // })
-
-    // uni.request({
-    //   url: 'http://localhost:10101/test',
-    //   success: res => {
-    //     console.log(res)
-    //   }
-    // })
-  }
 }
 </script>
 

@@ -48,10 +48,6 @@
 		"navigationStyle": "custom"
 	},
 	"tabBar": {
-//		"color": "#f00",
-//		"selectedColor": "#3cc51f",
-//		"borderStyle": "white",
-//		"backgroundColor": "#000",
 		"height": "100rpx",
 		"fontSize": "20rpx",
 		"spacing": "5rpx",
