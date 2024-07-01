@@ -1,4 +1,4 @@
-import req from '@/api/req'
+import req from '@/apis/req'
 
 export function testGet() {
     return req.get('test')

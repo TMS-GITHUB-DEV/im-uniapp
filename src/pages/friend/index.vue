@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import MainTabBar from '@/component/layout/MainTabBar.vue'
+import MainTabBar from '@/components/layout/MainTabBar.vue'
 
 export default {
   name: 'friend-index',

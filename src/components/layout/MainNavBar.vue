@@ -21,7 +21,7 @@
 
 <script>
 import { systemInfo } from '@/utils/layout'
-import NavBar from '@/component/layout/NavBar.vue'
+import NavBar from '@/components/layout/NavBar.vue'
 
 export default {
   name: 'MainNavBar',

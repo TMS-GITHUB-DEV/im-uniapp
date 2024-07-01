@@ -96,7 +96,7 @@
 </template>
 
 <script>
-import MainNavBar from "../../component/layout/MainNavBar.vue";
+import MainNavBar from "@/components/layout/MainNavBar.vue";
 
 export default {
   name: 'error',
