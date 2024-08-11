@@ -1,5 +1,7 @@
 <template>
-  <main-tab-bar/>
+  <main-tab-bar>
+    friend-index
+  </main-tab-bar>
 </template>
 
 <script>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "chat-list"
+  name: 'chat-list'
 }
 </script>
 

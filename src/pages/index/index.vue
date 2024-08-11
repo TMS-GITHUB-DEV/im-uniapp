@@ -1,27 +1,30 @@
 <template>
-  <view>
+  <main-tab-bar>
     <u-button @click="gotoDebug">go to debug</u-button>
-  </view>
+  </main-tab-bar>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				show: false
-			}
-		},
-		onLoad() {
-      console.log(process.env)
-		},
-		methods: {
-      gotoDebug() {
-        uni.navigateTo({
-          url: '/pages/debug/index'
-        })
-      }
+import MainTabBar from '@/components/layout/MainTabBar.vue'
+
+export default {
+  components: { MainTabBar },
+  data() {
+    return {
+      show: false
     }
-	}
+  },
+  onLoad() {
+    console.log(process.env)
+  },
+  methods: {
+    gotoDebug() {
+      uni.navigateTo({
+        url: '/pages/debug/index'
+      })
+    }
+  }
+}
 </script>
 
 <style lang="scss">

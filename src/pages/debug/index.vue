@@ -25,7 +25,7 @@
 import pages from '@/pages.json'
 
 export default {
-  name: "debug",
+  name: 'debug',
   data() {
     return {
       pages: pages.pages

@@ -1,9 +1,9 @@
-import req from '@/apis/req'
+import req from '@/utils/req'
 
 export function testGet() {
-    return req.get('test')
+  return req.get('test')
 }
 
 export function testPost() {
-    return req.post('test')
+  return req.post('test')
 }
