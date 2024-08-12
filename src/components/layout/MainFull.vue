@@ -1,5 +1,6 @@
 <template>
-  <view class="main-full-root" :style="`height: ${systemInfo.screenHeight};`">
+<!-- todo windowHeight要改成screenHeight 大概 -->
+  <view class="main-full-root" :style="`height: ${systemInfo.windowHeight};`">
     <slot></slot>
   </view>
 </template>

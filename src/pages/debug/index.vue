@@ -3,7 +3,7 @@
     <u-list>
       <u-list-item v-for="(page, index) in pages" :key="index">
         <u-cell
-            v-if="index < 2"
+            v-if="index < 4"
             :title="page.style.navigationBarTitleText"
             :value="page.path"
             @click="gotoTabBar(page.path)"

@@ -1,5 +1,5 @@
 <template>
-  <view class="main-nav-bar-root" :style="`height: ${systemInfo.screenHeight}rpx;`">
+  <view class="main-nav-bar-root" :style="`height: ${systemInfo.windowHeight}rpx;`">
     <nav-bar
       :title="navTitle"
       :bgc="navBgc"

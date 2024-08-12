@@ -1,117 +1,89 @@
 <template>
-  <main-tab-bar>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>mine</view>
-    <view>you</view>
+  <main-tab-bar class="mine-root">
+    <view class="personal-info">
+      <view class="avatar-box">
+        <image src="@/static/picture/loadErr.svg" alt=""  mode="aspectFit"/>
+      </view>
+      <view class="info-box">
+        <text class="nickname">昵称</text>
+        <text class="phone">手机号</text>
+      </view>
+      <view class="extra-box" @click="goLogin">
+        退出登录
+        <u-icon name="arrow-right" />
+      </view>
+    </view>
   </main-tab-bar>
 </template>
 
 <script>
 import MainTabBar from '@/components/layout/MainTabBar.vue'
-import { fmtDt } from '@/filters'
 
 export default {
   name: 'mine',
   components: { MainTabBar },
-  onLoad(query) {
-    const ts = 1719823287552
-    console.log(fmtDt(ts))
-    console.log(fmtDt(ts, 'MM-dd'))
-    console.log(fmtDt(ts, 'MM-dd hh:mm'))
-    console.log(fmtDt(ts, 'q'))
-    console.log(fmtDt(ts, 'W'))
-  }
+  data() {
+    return {
+      src: ''
+    }
+  },
+  methods: {
+    goLogin() {
+      uni.navigateTo({
+        url: '/pages/mine/login',
+      })
+    },
+  },
 }
 </script>
 
 <style scoped lang="scss">
 .mine-root {
-  background-color: #ff0;
-  overflow-y: scroll;
+  --personal-height: 150rpx;
+  --personal-top: 50rpx;
+  --personal-left: 30rpx;
+}
+
+.personal-info{
+  background-color: #0ff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: var(--personal-height);
+  padding: var(--personal-top) var(--personal-left);
+}
+
+.avatar-box {
+  background-color: #f9f9f9;
+  width: var(--personal-height);
+  height: var(--personal-height);
+  border-radius: 10px;
+  overflow: hidden;
+  image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-box {
+  width: var(--personal-width);
+  height: var(--personal-height);
+  margin: 0 5px;
+  flex: 1;
+  text {
+    display: block;
+    margin-bottom: 20rpx;
+    font-size: 30rpx;
+  }
+  .nickname {
+    margin-top: 10rpx;
+    font-size: 40rpx;
+  }
+}
+
+.extra-box {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 8rpx 0;
 }
 </style>

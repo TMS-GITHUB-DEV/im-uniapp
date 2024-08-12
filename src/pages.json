@@ -28,15 +28,21 @@
 			}
 		},
 		{
-			"path": "pages/debug/index",
+			"path": "pages/mine/login",
 			"style": {
-				"navigationBarTitleText": "debug"
+				"navigationBarTitleText": "登录"
 			}
 		},
 		{
 			"path": "pages/index/error",
 			"style": {
 				"navigationBarTitleText": "404"
+			}
+		},
+		{
+			"path": "pages/debug/index",
+			"style": {
+				"navigationBarTitleText": "debug"
 			}
 		}
 	],
@@ -48,34 +54,34 @@
 		"navigationStyle": "custom"
 	},
 	"tabBar": {
-		"height": "100rpx",
-		"fontSize": "20rpx",
+		"height": "110rpx",
+		"fontSize": "24rpx",
 		"spacing": "5rpx",
 		"iconWidth": "48rpx",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
 				"text": "首页",
-				"iconPath": "static/picture/home.svg",
-				"selectedIconPath": "static/picture/home-selected.svg"
+				"iconPath": "static/tabbar/home.svg",
+				"selectedIconPath": "static/tabbar/home-selected.svg"
 			},
 			{
 				"pagePath": "pages/friend/index",
 				"text": "好友",
-				"iconPath": "static/picture/friend.svg",
-				"selectedIconPath": "static/picture/friend-selected.svg"
+				"iconPath": "static/tabbar/friend.svg",
+				"selectedIconPath": "static/tabbar/friend-selected.svg"
 			},
 			{
 				"pagePath": "pages/chat/list",
 				"text": "消息",
-				"iconPath": "static/picture/chat.svg",
-				"selectedIconPath": "static/picture/chat-selected.svg"
+				"iconPath": "static/tabbar/chat.svg",
+				"selectedIconPath": "static/tabbar/chat-selected.svg"
 			},
 			{
 				"pagePath": "pages/mine/index",
 				"text": "我的",
-				"iconPath": "static/picture/mine.svg",
-				"selectedIconPath": "static/picture/mine-selected.svg"
+				"iconPath": "static/tabbar/mine.svg",
+				"selectedIconPath": "static/tabbar/mine-selected.svg"
 			}
 		]
 	}
