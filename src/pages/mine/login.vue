@@ -163,6 +163,7 @@ export default {
           break
         case 'password':
           this.loading = true
+            // fixme 这么看看能不能用await
           this.$refs.normalAccountRef.validate().then(_ => {
             normalLogin(this.normalAccount).then(res => {
               console.log(res)

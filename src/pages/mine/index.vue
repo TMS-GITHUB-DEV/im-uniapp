@@ -45,7 +45,6 @@ export default {
 }
 
 .personal-info{
-  background-color: #0ff;
   display: flex;
   flex-flow: row wrap;
   align-items: center;

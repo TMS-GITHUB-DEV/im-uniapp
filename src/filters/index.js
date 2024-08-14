@@ -1,13 +1,9 @@
-export function fmtDt(ts, fmt = 'yyyy-MM-dd hh:mm:ss', defaultVal = '-') {
-  if (!ts || ts <= 0) {
+export function fmtDt(ms, fmt = 'yyyy-MM-dd hh:mm:ss', defaultVal = '-') {
+  if (!ms || ms <= 0) {
     return defaultVal
   }
 
-  if (ts < 999999999999) {
-    ts *= 1000
-  }
-
-  const date = new Date(ts)
+  const date = new Date(ms)
   const month = date.getMonth()
   const o = {
     'M+': month + 1,
